@@ -28,7 +28,7 @@ export const base_profile = {
     first_name: "Gabriel",
     last_name: "Herrera",
     subtitle: "Aspiring Mechanical Engineer",
-    bio: ["Miami, FL", "Florida International University"],
+    bio: ["Hialeah, FL", "Florida International University"],
     name() {
         return this.first_name + " " + this.last_name;
     },
@@ -98,19 +98,21 @@ const projects_linksList = [
 
 const experiences = [
     {
-        company: "Company X",
+        icon: "/icons/NG-Logo.webp",
+        company: "Northrop Grumman",
         meta: [
-            "Software Engineer Intern",
+            "SIT&E Engineering Intern",
             "Jun 2022 - Aug 2022",
-            "Space, Space",
+            "Mojave, CA",
         ],
+        
         desc: [
-            "Did many things to improve the company",
-            "Hired a private inspector",
-            "Became superman!",
+            "Maintained a Secret security clearance",
+            "Researched aspects of an flying test beds",
+            "Presented a draft of a payload user's guide",
         ],
     },
-    {
+    /*{
         company: "Company Y",
         meta: [
             "Software Engineer Intern",
@@ -122,7 +124,7 @@ const experiences = [
             "Hired a private inspector",
             "Became superman!",
         ],
-    },
+    },*/
 ] as Experience[];
 
 const games_linksList = [
@@ -139,20 +141,26 @@ const games_linksList = [
 
 const contactMe_linksList = [
     {
-        url: "https://www.linkedin.com/in/",
+        url: "http://www.linkedin.com/in/gabriel-herrera-424a0a221",
         icon: "/icons/linkedin.svg",
         title: "LinkedIn",
     },
-    {
+    /*{
         url: "https://github.com/",
         icon: "/icons/github.svg",
         title: "GitHub",
+    },*/
+   {
+        url: "mailto: gherr047@fiu.edu",
+        title: "Email 1",
+        icon: "/icons/email.svg",
+        content: "gherr047@fiu.edu",
     },
     {
-        url: "mailto: someone@gmail.com",
-        title: "Email",
+        url: "mailto: gherrera6112@gmail.com",
+        title: "Email 2",
         icon: "/icons/email.svg",
-        content: "someone@gmail.com",
+        content: "gherrera6112@gmail.com",
     },
 ] as Link[];
 
@@ -183,7 +191,7 @@ export const sections = {
 } as Sections;
 
 export const webpage_config = {
-    title: `${base_profile.name()}'s |attach|`,
+    title: `About Me: ${base_profile.name()}`,
     desc: `An |attach| for ${base_profile.name()}`,
     keywords: `New Grad, Portfolio, Projects, Developer, Coder, Programmer, Programming, Languages, Software, ${base_profile.name()}`,
 };
