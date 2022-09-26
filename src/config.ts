@@ -27,8 +27,8 @@ export const random_theme_button = true;
 export const base_profile = {
     first_name: "Gabriel",
     last_name: "Herrera",
-    subtitle: "Aspiring Mechanical Engineer",
-    bio: ["Hialeah, FL", "Florida International University"],
+    subtitle: "Mechanical Engineering",
+    bio: ["Male","Hialeah, FL", "Florida International University"],
     name() {
         return this.first_name + " " + this.last_name;
     },
@@ -90,10 +90,7 @@ const projects_linksList = [
         title: "Todo App",
         content: "but you can force content by specifying like this!",
     },
-    {
-        url: "https://google.com",
-        title: "And more!",
-    },
+    
 ] as Link[];
 
 const experiences = [
@@ -169,22 +166,22 @@ const contactMe_linksList = [
  */
 export const sections = {
     // An example of a button. This button is a resume download
-    Resume: {
+    "📃 Resume": {
         url: "/Resume.docx",
         download_name: `${base_profile.name()}_Resume.pdf`,
     },
     // An example of a list of projects, that is opened on load
-    Projects: {
+    "⚙️ Projects/Clubs": {
         links: projects_linksList,
         default_opened: true,
     },
     // An example of an experience section
-    "Work Experience": {
+    "💼 Work Experience": {
         experiences: experiences,
     },
-    Games: {
+    /*Games: {
         links: games_linksList,
-    },
+    },*/
     "Contact Me": {
         links: contactMe_linksList,
     },
